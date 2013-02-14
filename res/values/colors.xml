@@ -71,6 +71,4 @@
 
     <color name="error_bar_background">#ffff66</color>
 
-    <!-- Compose colors -->
-    <color name="compose_label_text">#aaaaaa</color>
 </resources>
