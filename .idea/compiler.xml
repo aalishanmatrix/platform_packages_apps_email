@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <option name="DEFAULT_COMPILER" value="Javac" />
+    <excludeFromCompile>
+      <directory url="file://$PROJECT_DIR$/gen" includeSubdirectories="true" />
+      <directory url="file://$PROJECT_DIR$/gen-external-apklibs/com.actionbarsherlock_actionbarsherlock_4.2.0/gen" includeSubdirectories="true" />
+      <directory url="file://$PROJECT_DIR$/gen-external-apklibs/net.simonvt_android-menudrawer_2.0.1/gen" includeSubdirectories="true" />
+      <directory url="file://$PROJECT_DIR$/gen-external-apklibs/com.viewpagerindicator_library_2.4.1/gen" includeSubdirectories="true" />
+      <directory url="file://$PROJECT_DIR$/tests/gen" includeSubdirectories="true" />
+      <directory url="file://$PROJECT_DIR$/ex/mailcommon/tests/gen" includeSubdirectories="true" />
+      <directory url="file://$PROJECT_DIR$/ex/mailcommon/gen" includeSubdirectories="true" />
+      <directory url="file://$PROJECT_DIR$/ex/chips/gen" includeSubdirectories="true" />
+      <directory url="file://$PROJECT_DIR$/ex/chips/tests/gen" includeSubdirectories="true" />
+      <directory url="file://$PROJECT_DIR$/ex/common/tests/gen" includeSubdirectories="true" />
+    </excludeFromCompile>
+    <resourceExtensions />
+    <wildcardResourcePatterns>
+      <entry name="!?*.java" />
+      <entry name="!?*.form" />
+      <entry name="!?*.class" />
+      <entry name="!?*.groovy" />
+      <entry name="!?*.scala" />
+      <entry name="!?*.flex" />
+      <entry name="!?*.kt" />
+      <entry name="!?*.clj" />
+    </wildcardResourcePatterns>
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="false">
+        <processorPath useClasspath="true" />
+      </profile>
+      <profile default="false" name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+      </profile>
+    </annotationProcessing>
+  </component>
+</project>
+

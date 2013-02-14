@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/ex/chips/chips.iml" filepath="$PROJECT_DIR$/ex/chips/chips.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ex/chips/tests/chips_tests.iml" filepath="$PROJECT_DIR$/ex/chips/tests/chips_tests.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ex/mailcommon/mailcommon.iml" filepath="$PROJECT_DIR$/ex/mailcommon/mailcommon.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ex/mailcommon/tests/mailcommon_tests.iml" filepath="$PROJECT_DIR$/ex/mailcommon/tests/mailcommon_tests.iml" />
+      <module fileurl="file://$PROJECT_DIR$/platform_packages_apps_email.iml" filepath="$PROJECT_DIR$/platform_packages_apps_email.iml" />
+      <module fileurl="file://$PROJECT_DIR$/tests/platform_packages_apps_email_tests.iml" filepath="$PROJECT_DIR$/tests/platform_packages_apps_email_tests.iml" />
+    </modules>
+  </component>
+</project>
+
