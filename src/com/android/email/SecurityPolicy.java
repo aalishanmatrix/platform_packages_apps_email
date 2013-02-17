@@ -483,14 +483,14 @@ public class SecurityPolicy {
 
             // encryption required
             dpm.setStorageEncryption(mAdminName, aggregatePolicy.mRequireEncryption);
-//            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.JELLY_BEAN_MR1) {
-//                // Disable/re-enable keyguard features as required
-//                boolean noKeyguardFeatures =
-//                        aggregatePolicy.mPasswordMode != Policy.PASSWORD_MODE_NONE;
-//                dpm.setKeyguardDisabledFeatures(mAdminName,
-//                        (noKeyguardFeatures ? DevicePolicyManager.KEYGUARD_DISABLE_FEATURES_ALL :
-//                            DevicePolicyManager.KEYGUARD_DISABLE_FEATURES_NONE));
-//            }
+            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.JELLY_BEAN_MR1) {
+                // Disable/re-enable keyguard features as required
+                boolean noKeyguardFeatures =
+                        aggregatePolicy.mPasswordMode != Policy.PASSWORD_MODE_NONE;
+                dpm.setKeyguardDisabledFeatures(mAdminName,
+                        (noKeyguardFeatures ? DevicePolicyManager.KEYGUARD_DISABLE_FEATURES_ALL :
+                            DevicePolicyManager.KEYGUARD_DISABLE_FEATURES_NONE));
+            }
 
         }
     }
@@ -684,9 +684,9 @@ public class SecurityPolicy {
         return dpm.isAdminActive(mAdminName)
                 && dpm.hasGrantedPolicy(mAdminName, DeviceAdminInfo.USES_POLICY_EXPIRE_PASSWORD)
                 && dpm.hasGrantedPolicy(mAdminName, DeviceAdminInfo.USES_ENCRYPTED_STORAGE)
-                && dpm.hasGrantedPolicy(mAdminName, DeviceAdminInfo.USES_POLICY_DISABLE_CAMERA);
-//                && dpm.hasGrantedPolicy(mAdminName,
-//                        DeviceAdminInfo.USES_POLICY_DISABLE_KEYGUARD_FEATURES);
+                && dpm.hasGrantedPolicy(mAdminName, DeviceAdminInfo.USES_POLICY_DISABLE_CAMERA)
+                && dpm.hasGrantedPolicy(mAdminName,
+                        DeviceAdminInfo.USES_POLICY_DISABLE_KEYGUARD_FEATURES);
     }
 
     /**
